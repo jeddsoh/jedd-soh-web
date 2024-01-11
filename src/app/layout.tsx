@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={figtree.className}>
+      <body className={`${figtree.className} dark text-foreground bg-background`}>
         <Providers>
           <Nav />
           {children}
