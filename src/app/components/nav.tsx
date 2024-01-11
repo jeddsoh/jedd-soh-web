@@ -6,7 +6,11 @@ export default function Nav() {
     <Navbar maxWidth="lg">
       <NavbarBrand>
       <User
-      name="Jedd Soh"
+      name={(
+        <p className="font-bold">
+          Jedd Soh
+        </p>
+      )}
       description="Web Developer"
       avatarProps={{
         src: "/images/memoji.png",

@@ -7,7 +7,7 @@ export default function Hero() {
         <Section>
             <Container>
                 <div id="home-hero-layout" className="flex flex-col py-20 items-center">
-                    <div id="home-hero-text" className="flex flex-col items-center gap-4">
+                    <div id="home-hero-text" className="flex flex-col items-center gap-4 text-center">
                     <Image
                     width={256}
                     height={256}
