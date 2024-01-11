@@ -1,11 +1,9 @@
-import React from "react";
 import {  Navbar,   NavbarBrand,   NavbarContent,   NavbarItem,   NavbarMenuToggle,  NavbarMenu,  NavbarMenuItem } from "@nextui-org/react";
 import { User, Link, Button } from "@nextui-org/react";
 
 export default function Nav() {
   return (
-    <header className="w-full fixed">
-    <Navbar>
+    <Navbar maxWidth="lg">
       <NavbarBrand>
       <User
       name="Jedd Soh"
@@ -17,17 +15,17 @@ export default function Nav() {
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link href="">
+          <Link href="" size="sm" isBlock color="foreground">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#">
+          <Link href="#" size="sm" isBlock color="foreground">
             About
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#">
+          <Link href="#" size="sm" isBlock color="foreground">
             Contact
           </Link>
         </NavbarItem>
@@ -40,6 +38,5 @@ export default function Nav() {
         </NavbarItem>
       </NavbarContent>
     </Navbar>
-    </header>
   );
 }
