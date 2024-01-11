@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Figtree } from 'next/font/google'
 import './globals.css'
+import {Providers} from "./providers";
+import Nav from './components/nav';
 
 const figtree = Figtree({
   weight: ['400', '600'],
@@ -20,7 +22,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={figtree.className}>{children}</body>
+      <body className={figtree.className}>
+        <Providers>
+          <Nav />
+          {children}
+        </Providers>
+      </body>
     </html>
   )
 }
