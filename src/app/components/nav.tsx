@@ -9,7 +9,7 @@ export default function Nav() {
       name="Jedd Soh"
       description="Web Developer"
       avatarProps={{
-        src: "",
+        src: "/images/memoji.png",
         name: "JS"
       }} />
       </NavbarBrand>
@@ -17,6 +17,11 @@ export default function Nav() {
         <NavbarItem>
           <Link href="" size="sm" isBlock color="foreground">
             Home
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link href="" size="sm" isBlock color="foreground">
+            Projects
           </Link>
         </NavbarItem>
         <NavbarItem>

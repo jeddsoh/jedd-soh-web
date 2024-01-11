@@ -5,7 +5,7 @@ import {Providers} from "./providers";
 import Nav from './components/nav';
 
 const figtree = Figtree({
-  weight: ['400', '600'],
+  weight: ['400', '600', '700'],
   style: ['normal', 'italic'],
   subsets: ['latin']
 })
