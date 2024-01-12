@@ -33,7 +33,7 @@ export default function Nav() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-        <Link href="" size="sm" isBlock color="foreground" showAnchorIcon anchorIcon={<FontAwesomeIcon icon={faUser} className="ml-2"/>}>
+        <Link href="#about" size="sm" isBlock color="foreground" showAnchorIcon anchorIcon={<FontAwesomeIcon icon={faUser} className="ml-2"/>}>
             About
           </Link>
         </NavbarItem>

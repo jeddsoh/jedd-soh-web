@@ -16,7 +16,7 @@ export default function Hero() {
                     src="/images/memoji.png"
                     />
                         <h1 className="font-semibold text-6xl">Hey fam, thanks for pulling up!</h1>
-                        <p className="text-xl">I&apos;m lowkey a front-end engineer.
+                        <p className="text-xl">I&apos;m lowkey tryna be a front-end engineer.
                         <br />
                         I&apos;m tryna build lit products with bussin&apos; interfaces, on God ☝️
                         </p>
