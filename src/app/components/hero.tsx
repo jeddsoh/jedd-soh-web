@@ -5,7 +5,7 @@ import {Button} from "@nextui-org/react";
 
 export default function Hero() {
     return (
-        <Section>
+        <Section id="hero">
             <Container>
                 <div id="home-hero-layout" className="flex flex-col py-20 gap-10 items-center">
                     <div id="home-hero-text" className="flex flex-col items-center gap-6 text-center">
@@ -22,10 +22,10 @@ export default function Hero() {
                         </p>
                     </div>
                     <div id="home-hero-buttons" className="flex flex-row items-center gap-3 text-center">
-                        <Button color="primary" variant="light" size="lg" radius="full">
+                        <Button color="primary" variant="light" size="lg" radius="sm">
                             Contact Me
                         </Button>
-                        <Button color="primary" variant="flat" size="lg" radius="full">
+                        <Button color="primary" variant="flat" size="lg" radius="sm">
                             View My Resume
                         </Button>
                     </div>

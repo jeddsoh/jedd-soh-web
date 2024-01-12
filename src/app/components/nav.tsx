@@ -23,12 +23,12 @@ export default function Nav() {
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link href="" size="sm" isBlock color="foreground" showAnchorIcon anchorIcon={<FontAwesomeIcon icon={faHouse} className="ml-2"/>}>
+          <Link href="#hero" size="sm" isBlock color="foreground" showAnchorIcon anchorIcon={<FontAwesomeIcon icon={faHouse} className="ml-2"/>}>
             Intro
           </Link>
         </NavbarItem>
         <NavbarItem>
-        <Link href="" size="sm" isBlock color="foreground" showAnchorIcon anchorIcon={<FontAwesomeIcon icon={faCode} className="ml-2"/>}>
+        <Link href="#projects" size="sm" isBlock color="foreground" showAnchorIcon anchorIcon={<FontAwesomeIcon icon={faCode} className="ml-2"/>}>
             Projects
           </Link>
         </NavbarItem>
