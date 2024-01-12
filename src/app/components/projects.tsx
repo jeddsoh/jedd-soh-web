@@ -9,7 +9,7 @@ export default function Projects() {
     return (
         <Section id="projects">
             <Container>
-                <div id="home-projects-layout" className="flex flex-row gap-10 items-stretch w-full justify-between py-20">
+                <div id="home-projects-layout" className="flex flex-col md:flex-row gap-10 items-stretch w-full justify-between py-20">
                 <Card
       isFooterBlurred
       radius="sm"
