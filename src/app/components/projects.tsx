@@ -12,90 +12,89 @@ export default function Projects() {
       <Container>
         <div
           id="home-projects-layout"
-          className="flex flex-col gap-10 items-stretch w-full justify-between"
+          className="flex flex-col gap-10 items-stretch w-full justify-between pt-8"
         >
           <Card
             isFooterBlurred
             radius="sm"
             fullWidth
             isPressable
-            className="border-[0.5px] border-white/10 max-h-60"
+            className="border-[0.5px] border-white/10 md:h-60 flex-col-reverse md:flex-col"
           >
-            <Image
-              alt="YouVersion project cover"
-              className="object-fill"
-              src="/images/cyberpotions.png"
-              isZoomed
-              radius="none"
-            />
-            <CardFooter className="flex flex-col gap-4 rounded-small p-8 items-start justify-center absolute z-10 border-r-[0.5px] border-white/10 left-0 w-1/2 h-full bg-background/80 text-left">
+            <CardFooter className="flex flex-col gap-3 p-6 md:p-8 items-start justify-center z-10 md:w-1/2 w-full h-full bg-background/80 text-left md:absolute md:left-0 rounded-none border-t-[0.5px] md:border-t-0 md:border-r-[0.5px] border-white/10">
                   <Chip
                     size="sm"
                     className="gap-1 uppercase font-semibold tracking-wide"
                     variant="flat"
                     classNames={{
-                      base: "bg-rose-500/20",
-                      content: "text-rose-400",
+                      base: "bg-indigo-500/20",
+                      content: "text-indigo-300",
                     }}
                     startContent={
                       <FontAwesomeIcon
                         icon={faPenNib}
                         size="xs"
-                        className="ml-1 text-rose-400"
+                        className="ml-1 text-indigo-300"
                       />
                     }
                   >
                     Design
                   </Chip>
-                  <p className="font-bold text-lg">Affirm Agent Portal</p>
-                <p className="text-sm text-stone-300">
-                  Internal software to help Affirm support agents work more
+                  <p className="font-bold text-xl">Affirm Agent Portal</p>
+                <p className="text-sm text-stone-300 md:pb-4">
+                  Internal tooling helping Affirm support agents work more
                   efficiently, handle data discrepancies, and avoid customer
                   frustration.
                 </p>
             </CardFooter>
+            <Image
+              alt="YouVersion project cover"
+              className="object-cover h-60 z-0"
+              src="/images/affirm.png"
+              isZoomed
+              radius="none"
+            />
           </Card>
           <Card
             isFooterBlurred
             radius="sm"
             fullWidth
             isPressable
-            className="border-[0.5px] border-white/10 max-h-60"
+            className="border-[0.5px] border-white/10 md:h-60 flex-col-reverse md:flex-col"
           >
-            <Image
-              alt="YouVersion project cover"
-              className="object-fill"
-              src="/images/cyberpotions.png"
-              isZoomed
-              radius="none"
-            />
-            <CardFooter className="flex flex-col gap-4 rounded-small p-8 items-start justify-center absolute z-10 border-r-[0.5px] border-white/10 left-0 w-1/2 h-full bg-background/80 text-left">
+            <CardFooter className="flex flex-col gap-3 p-6 md:p-8 items-start justify-center z-10 md:w-1/2 w-full h-full bg-background/80 text-left md:absolute md:left-0 rounded-none border-t-[0.5px] md:border-t-0 md:border-r-[0.5px] border-white/10">
             <Chip
                     size="sm"
                     className="gap-1 uppercase font-semibold tracking-wide"
                     variant="flat"
                     classNames={{
-                      base: "bg-sky-500/20",
-                      content: "text-sky-400",
+                      base: "bg-red-500/20",
+                      content: "text-red-400",
                     }}
                     startContent={
                       <FontAwesomeIcon
                         icon={faWebflow}
                         size="xs"
-                        className="ml-1 text-sky-400"
+                        className="ml-1 text-red-400"
                       />
                     }
                   >
                     Webflow
                   </Chip>
-                  <p className="font-bold text-lg">Affirm Agent Portal</p>
-                <p className="text-sm text-stone-300">
-                  Internal software to help Affirm support agents work more
-                  efficiently, handle data discrepancies, and avoid customer
-                  frustration.
+                  <p className="font-bold text-xl">Warriors for Freedom</p>
+                <p className="text-sm text-stone-300 md:pb-4">
+                A Webflow site for Warriors for Freedom, a nonprofit organization committed to improving mental health and preventing suicide among veterans.
                 </p>
             </CardFooter>
+            <Image
+              alt="YouVersion project cover"
+              className="object-cover h-60 z-0"
+              src="/images/warriors-for-freedom.png"
+              isZoomed
+              radius="none"
+            />
           </Card>
+          
         </div>
       </Container>
     </Section>
