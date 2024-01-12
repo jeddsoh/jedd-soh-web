@@ -16,9 +16,7 @@ export default function Hero() {
                     src="/images/memoji.png"
                     />
                         <h1 className="font-semibold text-6xl">Hey fam, thanks for pulling up!</h1>
-                        <p className="text-xl">I&apos;m lowkey tryna be a front-end engineer.
-                        <br />
-                        I&apos;m tryna build lit products with bussin&apos; interfaces, on God ☝️
+                        <p className="text-lg">I&apos;m lowkey tryna build lit products with bussin&apos; interfaces, on God ☝️
                         </p>
                     </div>
                     <div id="home-hero-buttons" className="flex flex-row items-center gap-3 text-center">
