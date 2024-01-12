@@ -7,7 +7,7 @@ export default function Nav() {
       <NavbarBrand>
       <User
       name={(
-        <p className="font-bold">
+        <p className="font-semibold">
           Jedd Soh
         </p>
       )}
@@ -37,13 +37,6 @@ export default function Nav() {
           <Link href="#" size="sm" isBlock color="foreground">
             Contact
           </Link>
-        </NavbarItem>
-      </NavbarContent>
-      <NavbarContent justify="end">
-        <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            View Resume
-          </Button>
         </NavbarItem>
       </NavbarContent>
     </Navbar>
