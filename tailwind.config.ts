@@ -41,7 +41,7 @@ const config: Config = {
               DEFAULT: "#eab308",
               foreground: "#ffffff",
             },
-            focus: "#F182F6",
+            focus: "#ca8a04",
 
         }, // dark theme colors
       },
