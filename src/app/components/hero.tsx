@@ -22,10 +22,10 @@ export default function Hero() {
                         </p>
                     </div>
                     <div id="home-hero-buttons" className="flex flex-row items-center gap-3 text-center">
-                        <Button color="primary" variant="light" size="lg">
+                        <Button color="primary" variant="light" size="lg" radius="full">
                             Contact Me
                         </Button>
-                        <Button color="primary" variant="flat" size="lg">
+                        <Button color="primary" variant="flat" size="lg" radius="full">
                             View My Resume
                         </Button>
                     </div>

@@ -4,6 +4,10 @@ import './globals.css'
 import {Providers} from "./providers";
 import Nav from './components/nav';
 
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+
 const figtree = Figtree({
   weight: ['400', '600', '700'],
   style: ['normal', 'italic'],
