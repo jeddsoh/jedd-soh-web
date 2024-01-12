@@ -11,7 +11,7 @@ export default function Nav() {
       <NavbarBrand>
       <User
       name={(
-        <p className="font-semibold">
+        <p className="font-semibold text-yellow-500 uppercase tracking-wide">
           Jedd Soh
         </p>
       )}
