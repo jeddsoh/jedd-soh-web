@@ -49,9 +49,10 @@ export default function Contact() {
         <div id="home-about-layout" className="flex flex-col py-24 gap-10">
           <h2 className="font-semibold text-4xl">Contact</h2>
           <div className="w-full flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-10">
-            <form data-netlify="true" method="POST" className="w-full flex flex-col gap-4 items-start">
+            <form data-netlify="true" method="POST" name="Contact" className="w-full flex flex-col gap-4 items-start">
               <Input
                 type="email"
+                name="Email"
                 label="Email"
                 required
                 radius="sm"
@@ -60,6 +61,7 @@ export default function Contact() {
               />
               <Textarea
                 type="text"
+                name="Message"
                 label="Message"
                 required
                 radius="sm"
