@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { Section } from "./section";
 import { Container } from "./container";

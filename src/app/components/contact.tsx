@@ -80,7 +80,7 @@ export default function Contact() {
               </Button>
             </form>
             <div className="w-full flex flex-col gap-4 items-start mt-4 md:mt-0">
-                <h3>My addies:</h3>
+              <h3>My addies:</h3>
               <Card
                 className="w-full"
                 radius="sm"

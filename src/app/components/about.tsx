@@ -142,7 +142,7 @@ export default function About() {
                   </CardBody>
                 </Card>
                 <Card
-                  className="flex flex-col mt-3 text-left overflow-auto"
+                  className="flex flex-col mt-3 text-left"
                   radius="sm"
                   isPressable
                   onClick={openFrank}
@@ -174,7 +174,7 @@ export default function About() {
                       Webflow, WordPress, and Shopify.
                     </p>
                   </CardBody>
-                  <div className="flex flex-row p-2 overflow-auto">
+                  <div className="flex flex-row p-2 overflow-auto max-w-full">
                     <Link
                       isBlock
                       showAnchorIcon
@@ -236,7 +236,8 @@ export default function About() {
                   <Divider />
                   <CardBody className="p-4">
                     <p className="text-sm">
-                    Designed user interface and researched user behavior for the Bible App.
+                      Designed user interface and researched user behavior for
+                      the Bible App.
                     </p>
                   </CardBody>
                 </Card>
