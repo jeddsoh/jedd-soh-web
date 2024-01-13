@@ -87,7 +87,7 @@ export default function About() {
                         <p className="text-small text-default-500">
                           2023 • Remote Contractor
                         </p>
-                        <p className="font-semibold text-xl">
+                        <p className="font-semibold text-base md:text-xl">
                           Design Ops Strategist
                           <span className="text-foreground/70"> • Wipro</span>
                         </p>
@@ -101,8 +101,8 @@ export default function About() {
                     </div>
                   </CardHeader>
                   <Divider />
-                  <CardBody className="p-4 opa">
-                    <p>
+                  <CardBody className="p-4">
+                    <p className="text-sm">
                       Building design systems and improving design workflows.
                     </p>
                   </CardBody>
@@ -120,7 +120,7 @@ export default function About() {
                         <p className="text-small text-default-500">
                           2022 • Remote Contractor
                         </p>
-                        <p className="font-semibold text-xl">
+                        <p className="font-semibold text-base md:text-xl">
                           User Interface Designer
                           <span className="text-foreground/70"> • Affirm</span>
                         </p>
@@ -134,8 +134,8 @@ export default function About() {
                     </div>
                   </CardHeader>
                   <Divider />
-                  <CardBody className="p-4 opa">
-                    <p>
+                  <CardBody className="p-4">
+                    <p className="text-sm">
                       Deliver high-fidelity user interface designs for new
                       internal tooling.
                     </p>
@@ -154,7 +154,7 @@ export default function About() {
                         <p className="text-small text-default-500">
                           2021 • Oklahoma City
                         </p>
-                        <p className="font-semibold text-xl">
+                        <p className="font-semibold text-base md:text-xl">
                           Webflow Developer
                           <span className="text-foreground/70"> • Frank</span>
                         </p>
@@ -169,7 +169,7 @@ export default function About() {
                   </CardHeader>
                   <Divider />
                   <CardBody className="p-4 -mb-4">
-                    <p>
+                    <p className="text-sm">
                       Design and develop no-code sites for clients using
                       Webflow, WordPress, and Shopify.
                     </p>
@@ -217,7 +217,7 @@ export default function About() {
                         <p className="text-small text-default-500">
                           2021 • Edmond, Oklahoma
                         </p>
-                        <p className="font-semibold text-xl">
+                        <p className="font-semibold text-base md:text-xl">
                           Product Design Intern
                           <span className="text-foreground/70">
                             {" "}
@@ -234,8 +234,8 @@ export default function About() {
                     </div>
                   </CardHeader>
                   <Divider />
-                  <CardBody className="p-4 opa">
-                    <p>
+                  <CardBody className="p-4">
+                    <p className="text-sm">
                       Deliver high-fidelity user interface designs for new
                       internal tooling.
                     </p>
