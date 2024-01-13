@@ -73,7 +73,7 @@ export default function Nav() {
         </NavbarItem>
         <NavbarItem>
           <Link
-            href=""
+            href="#contact"
             size="sm"
             isBlock
             color="foreground"
