@@ -1,9 +1,34 @@
+'use client'
+
 import { Section } from "./section";
 import { Container } from "./container";
 import {Image} from "@nextui-org/react";
 import {Button} from "@nextui-org/react";
 
 export default function Hero() {
+    const scrollToContact = () => {
+        const contactSection = document.getElementById('contact');
+      
+        if (contactSection) {
+          contactSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      };
+
+      const scrollToAbout = () => {
+        const aboutSection = document.getElementById('about');
+      
+        if (aboutSection) {
+          aboutSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      };
+      
+
     return (
         <Section id="hero">
             <Container>
@@ -20,10 +45,10 @@ export default function Hero() {
                         </p>
                     </div>
                     <div id="home-hero-buttons" className="w-full md:w-auto flex flex-col-reverse items-stretch md:flex-row gap-3 text-center">
-                        <Button color="primary" variant="light" size="lg" radius="sm" href="#contact">
+                        <Button color="primary" variant="light" size="lg" radius="sm" onClick={scrollToContact}>
                             Contact Me
                         </Button>
-                        <Button color="primary" variant="flat" size="lg" radius="sm" href="#about">
+                        <Button color="primary" variant="flat" size="lg" radius="sm" onClick={scrollToAbout}>
                             View My Resume
                         </Button>
                     </div>
