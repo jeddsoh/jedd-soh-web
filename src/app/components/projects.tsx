@@ -40,7 +40,7 @@ export default function Projects() {
                   >
                     Design
                   </Chip>
-                  <p className="font-bold text-xl">Affirm Agent Portal</p>
+                  <p className="font-bold text-2xl">Affirm Agent Portal</p>
                 <p className="text-sm text-stone-300 md:pb-4">
                   Internal tooling helping Affirm support agents work more
                   efficiently, handle data discrepancies, and avoid customer
@@ -81,7 +81,7 @@ export default function Projects() {
                   >
                     Webflow
                   </Chip>
-                  <p className="font-bold text-xl">Warriors for Freedom</p>
+                  <p className="font-bold text-2xl">Warriors for Freedom</p>
                 <p className="text-sm text-stone-300 md:pb-4">
                 A Webflow site for Warriors for Freedom, a nonprofit organization committed to improving mental health and preventing suicide among veterans.
                 </p>
