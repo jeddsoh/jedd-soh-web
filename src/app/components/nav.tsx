@@ -27,7 +27,7 @@ export default function Nav() {
               Jedd Soh
             </p>
           }
-          description="Software Developer"
+          description="Software Design-gineer"
           avatarProps={{
             src: "/images/memoji.png",
             name: "JS",

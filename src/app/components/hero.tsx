@@ -19,7 +19,7 @@ export default function Hero() {
                         <p className="text-lg">I&apos;m lowkey tryna build lit products with bussin&apos; interfaces, on God ☝️
                         </p>
                     </div>
-                    <div id="home-hero-buttons" className="flex flex-row items-center gap-3 text-center">
+                    <div id="home-hero-buttons" className="flex flex-col-reverse items-stretch md:flex-row gap-3 text-center">
                         <Button color="primary" variant="light" size="lg" radius="sm">
                             Contact Me
                         </Button>

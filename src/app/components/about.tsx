@@ -3,13 +3,26 @@
 import React from "react";
 import { Section } from "./section";
 import { Container } from "./container";
-import { Tabs, Tab, Card, CardBody, CardHeader } from "@nextui-org/react";
+import {
+  Tabs,
+  Tab,
+  Card,
+  CardHeader,
+  CardFooter,
+  CardBody,
+  Link,
+  Image,
+  Chip,
+  Divider,
+} from "@nextui-org/react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBullseye,
   faBriefcase,
-  faGraduationCap
+  faGraduationCap,
+  faFaceFlushed,
+  faScroll,
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function About() {
@@ -22,53 +35,337 @@ export default function About() {
         >
           <h2 className="font-semibold text-4xl">About Me</h2>
           <div className="flex w-full flex-col">
-            <Tabs aria-label="Options" fullWidth>
+            <Tabs aria-label="Options" fullWidth radius="sm" size="lg">
               <Tab
-                key="mission"
+                key="experience"
                 title={
                   <div className="flex items-center space-x-2">
-                    <FontAwesomeIcon icon={faBullseye} className=""/>
-                    <span className="text-base">Mission</span>
+                    <FontAwesomeIcon icon={faBriefcase} />
+                    <span className="text-base">Experience</span>
+                  </div>
+                }
+              >
+                <Card
+                  className="flex flex-col"
+                  radius="sm"
+                  isPressable
+                  fullWidth
+                >
+                  <CardHeader className="flex gap-3 p-4">
+                    <div className="flex flex-row justify-between w-full items-center">
+                      <div className="flex flex-col gap-2 items-start">
+                        <p className="text-small text-default-500">
+                          2023 • Remote Contractor
+                        </p>
+                        <p className="font-semibold text-xl">
+                          Design Ops Strategist
+                          <span className="text-foreground/70"> • Wipro</span>
+                        </p>
+                      </div>
+                      <Image
+                        alt="Wipro logo"
+                        radius="none"
+                        src="/images/wipro-logo.svg"
+                        width={64}
+                      />
+                    </div>
+                  </CardHeader>
+                  <Divider />
+                  <CardBody className="p-4 opa">
+                    <p>
+                      Building design systems and improving design workflows.
+                    </p>
+                  </CardBody>
+                </Card>
+                <Card
+                  className="flex flex-col mt-3"
+                  radius="sm"
+                  isPressable
+                  fullWidth
+                >
+                  <CardHeader className="flex gap-3 p-4">
+                    <div className="flex flex-row justify-between w-full items-center">
+                      <div className="flex flex-col gap-2 items-start">
+                        <p className="text-small text-default-500">
+                          2022 • Remote Contractor
+                        </p>
+                        <p className="font-semibold text-xl">
+                          User Interface Designer
+                          <span className="text-foreground/70"> • Affirm</span>
+                        </p>
+                      </div>
+                      <Image
+                        alt="Affirm logo"
+                        radius="none"
+                        src="/images/affirm-logo.svg"
+                        width={64}
+                      />
+                    </div>
+                  </CardHeader>
+                  <Divider />
+                  <CardBody className="p-4 opa">
+                    <p>
+                      Deliver high-fidelity user interface designs for new
+                      internal tooling.
+                    </p>
+                  </CardBody>
+                </Card>
+                <Card
+                  className="flex flex-col mt-3"
+                  radius="small"
+                  isPressable
+                  fullWidth
+                >
+                  <CardHeader className="flex gap-3 p-4">
+                    <div className="flex flex-row justify-between w-full items-center">
+                      <div className="flex flex-col gap-2 items-start">
+                        <p className="text-small text-default-500">
+                          2021 • Oklahoma City
+                        </p>
+                        <p className="font-semibold text-xl">
+                          Webflow Developer
+                          <span className="text-foreground/70"> • Frank</span>
+                        </p>
+                      </div>
+                      <Image
+                        alt="Frank logo"
+                        radius="none"
+                        src="/images/frank-logo.png"
+                        width={64}
+                      />
+                    </div>
+                  </CardHeader>
+                  <Divider />
+                  <CardBody className="p-4 -mb-4">
+                    <p>
+                      Design and develop no-code sites for clients using
+                      Webflow, WordPress, and Shopify.
+                    </p>
+                  </CardBody>
+                  <div className="flex flex-row p-2 overflow-auto">
+                    <Link
+                      isBlock
+                      showAnchorIcon
+                      href="https://frankyou.com"
+                      color="primary"
+                      size="sm"
+                    >
+                      frankyou.com
+                    </Link>
+                    <Link
+                      isBlock
+                      showAnchorIcon
+                      href="https://warriorsforfreedom.org"
+                      color="primary"
+                      size="sm"
+                    >
+                      warriorsforfreedom.org
+                    </Link>
+                    <Link
+                      isBlock
+                      showAnchorIcon
+                      href="https://yourwsa.com"
+                      color="primary"
+                      size="sm"
+                    >
+                      yourwsa.com
+                    </Link>
+                  </div>
+                </Card>
+                <Card
+                  className="flex flex-col mt-3"
+                  radius="sm"
+                  isPressable
+                  fullWidth
+                >
+                  <CardHeader className="flex gap-3 p-4">
+                    <div className="flex flex-row justify-between w-full items-center">
+                      <div className="flex flex-col gap-2 items-start">
+                        <p className="text-small text-default-500">
+                          2021 • Edmond, Oklahoma
+                        </p>
+                        <p className="font-semibold text-xl">
+                          Product Design Intern
+                          <span className="text-foreground/70">
+                            {" "}
+                            • Bible App
+                          </span>
+                        </p>
+                      </div>
+                      <Image
+                        alt="YouVersion logo"
+                        radius="none"
+                        src="/images/bible-logo.png"
+                        width={40}
+                      />
+                    </div>
+                  </CardHeader>
+                  <Divider />
+                  <CardBody className="p-4 opa">
+                    <p>
+                      Deliver high-fidelity user interface designs for new
+                      internal tooling.
+                    </p>
+                  </CardBody>
+                </Card>
+              </Tab>
+              <Tab
+                key="education"
+                title={
+                  <div className="flex items-center space-x-2">
+                    <FontAwesomeIcon icon={faGraduationCap} />
+                    <span className="text-base">Education</span>
+                  </div>
+                }
+              >
+                <Card
+                  className="flex flex-col"
+                  radius="sm"
+                  isPressable
+                  fullWidth
+                >
+                  <CardHeader className="flex gap-3 p-4">
+                    <div className="flex flex-row justify-between w-full items-center">
+                      <div className="flex flex-row gap-4 items-start">
+                        <p className="text-xl">
+                          University of Oklahoma
+                        </p>
+
+                      </div>
+                        <div className="flex flex-row gap-4 items-center">
+                          <Chip
+                            className="gap-1 font-semibold"
+                            variant="solid"
+                            classNames={{
+                              base: "",
+                              content: "",
+                            }}
+                            startContent={
+                              <FontAwesomeIcon
+                                icon={faGraduationCap}
+                                className="ml-2"
+                              />
+                            }
+                          >
+                            Class of 2020
+                          </Chip>
+                          <Chip
+                            className="gap-1 font-semibold"
+                            variant="flat"
+                            classNames={{
+                              base: "",
+                              content: "",
+                            }}
+                            startContent={
+                              <FontAwesomeIcon
+                                icon={faScroll}
+                                className="ml-2"
+                              />
+                            }
+                          >
+                            B.A. Creative Media Production
+                          </Chip>
+                          <Chip
+                            className="gap-1 font-semibold"
+                            variant="flat"
+                            classNames={{
+                              base: "",
+                              content: "",
+                            }}
+                            startContent={
+                              <FontAwesomeIcon
+                                icon={faScroll}
+                                className="ml-2 "
+                              />
+                            }
+                          >
+                            B.A. Chinese
+                          </Chip>
+                        </div>
+                      
+                    </div>
+                  </CardHeader>
+                </Card>
+                <Card
+                  className="flex flex-col mt-3"
+                  radius="sm"
+                  isPressable
+                  fullWidth
+                >
+                  <CardHeader className="flex gap-3 p-4">
+                    <div className="flex flex-row justify-between w-full items-center">
+                      <div className="flex flex-row gap-4 items-start">
+                        <p className="text-xl">
+                          Beijing Normal University
+                        </p>
+
+                      </div>
+                        <div className="flex flex-row gap-4 items-center">
+                          <Chip
+                            className="gap-1 font-semibold"
+                            variant="solid"
+                            classNames={{
+                              base: "",
+                              content: "",
+                            }}
+                            startContent={
+                              <FontAwesomeIcon
+                                icon={faGraduationCap}
+                                className="ml-2"
+                              />
+                            }
+                          >
+                            2017 - 2018
+                          </Chip>
+                          <Chip
+                            className="gap-1 font-semibold"
+                            variant="flat"
+                            classNames={{
+                              base: "",
+                              content: "",
+                            }}
+                            startContent={
+                              <FontAwesomeIcon
+                                icon={faScroll}
+                                className="ml-2"
+                              />
+                            }
+                          >
+                            Exchange Program
+                          </Chip>
+                          
+                        </div>
+                      
+                    </div>
+                  </CardHeader>
+                </Card>
+
+                
+              </Tab>
+              <Tab
+                key="personal"
+                title={
+                  <div className="flex items-center space-x-2">
+                    <FontAwesomeIcon icon={faFaceFlushed} className="" />
+                    <span className="text-base">Personal</span>
                   </div>
                 }
               >
                 <Card>
-                  <CardBody>
-                    <h3 className="font-semibold text-2xl">
-                      My Heading Goes Here
-                    </h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </CardBody>
-                </Card>
-              </Tab>
-              <Tab key="experience" title={
-                  <div className="flex items-center space-x-2">
-                    <FontAwesomeIcon icon={faBriefcase} className=""/>
-                    <span className="text-base">Experience</span>
-                  </div>
-                }>
-                <Card>
-                  <CardBody>
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur.
-                  </CardBody>
-                </Card>
-              </Tab>
-              <Tab key="education" title={
-                  <div className="flex items-center space-x-2">
-                    <FontAwesomeIcon icon={faGraduationCap} className=""/>
-                    <span className="text-base">Education</span>
-                  </div>
-                }>
-                <Card>
-                  <CardBody>
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                  <CardBody className="flex flex-row p-8 items-center gap-8">
+                    
+                    <div className="flex flex-col gap-4">
+                      <h3 className="font-semibold text-2xl">
+                        My heading goes here.
+                      </h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                      </p>
+                    </div>
                   </CardBody>
                 </Card>
               </Tab>
