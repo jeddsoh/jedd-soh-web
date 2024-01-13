@@ -261,7 +261,7 @@ export default function About() {
                   <CardHeader className="flex gap-3 p-4">
                     <div className="flex flex-row justify-between w-full items-center  gap-4">
                       <div className="flex flex-row gap-4 items-start text-left">
-                        <p className="text-nowrap text-base md:text-xl">
+                        <p className="whitespace-nowrap text-base md:text-xl">
                           University of Oklahoma
                         </p>
                       </div>
@@ -325,7 +325,7 @@ export default function About() {
                   <CardHeader className="flex gap-3 p-4">
                     <div className="flex flex-row gap-4 justify-between w-full items-center">
                       <div className="flex flex-row gap-4 items-start text-left">
-                        <p className="text-nowrap text-base md:text-xl">
+                        <p className="whitespace-nowrap text-base md:text-xl">
                           Beijing Normal University
                         </p>
                       </div>
