@@ -48,7 +48,7 @@ export default function Contact() {
       <Container>
         <div id="home-about-layout" className="flex flex-col py-24 gap-10">
           <h2 className="font-semibold text-4xl">Contact</h2>
-          <div className="w-full grid grid-cols-2 gap-10">
+          <div className="w-full flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-10">
             <form className="w-full flex flex-col gap-4 items-start">
               <Input
                 type="email"
@@ -79,7 +79,8 @@ export default function Contact() {
                 Submit
               </Button>
             </form>
-            <div className="w-full flex flex-col gap-4 items-start ">
+            <div className="w-full flex flex-col gap-4 items-start mt-4 md:mt-0">
+                <h3>My addies:</h3>
               <Card
                 className="w-full"
                 radius="sm"
