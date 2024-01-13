@@ -49,7 +49,7 @@ export default function Contact() {
         <div id="home-about-layout" className="flex flex-col py-24 gap-10">
           <h2 className="font-semibold text-4xl">Contact</h2>
           <div className="w-full flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-10">
-            <form className="w-full flex flex-col gap-4 items-start">
+            <form netlify className="w-full flex flex-col gap-4 items-start">
               <Input
                 type="email"
                 label="Email"
