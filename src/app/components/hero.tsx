@@ -20,10 +20,10 @@ export default function Hero() {
                         </p>
                     </div>
                     <div id="home-hero-buttons" className="w-full md:w-auto flex flex-col-reverse items-stretch md:flex-row gap-3 text-center">
-                        <Button color="primary" variant="light" size="lg" radius="sm">
+                        <Button color="primary" variant="light" size="lg" radius="sm" href="#contact">
                             Contact Me
                         </Button>
-                        <Button color="primary" variant="flat" size="lg" radius="sm">
+                        <Button color="primary" variant="flat" size="lg" radius="sm" href="#about">
                             View My Resume
                         </Button>
                     </div>
