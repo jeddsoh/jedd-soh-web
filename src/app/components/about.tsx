@@ -112,7 +112,7 @@ export default function About() {
                 </Card>
                 <Card
                   className="flex flex-col mt-3"
-                  radius="small"
+                  radius="sm"
                   isPressable
                   fullWidth
                 >
