@@ -1,3 +1,5 @@
+'use client'
+
 import { Section } from "./section";
 import { Container } from "./container";
 import { Card, CardFooter, Image, Divider, Chip } from "@nextui-org/react";
@@ -7,7 +9,15 @@ import { faPenNib } from "@fortawesome/free-solid-svg-icons";
 import { faWebflow } from "@fortawesome/free-brands-svg-icons";
 
 export default function Projects() {
+  const openAffirmProject = () => {
+    const affirmProject = "https://cyberpotions.com/projects/affirm";
+    window.open(affirmProject, "_blank");
+  };
 
+  const openWarriorsForFreedom = () => {
+    const warriorsForFreedom = "https://warriorsforfreedom.org";
+    window.open(warriorsForFreedom, "_blank");
+  };
 
   return (
     <Section id="projects">
@@ -16,16 +26,15 @@ export default function Projects() {
           id="home-projects-layout"
           className="flex flex-col gap-10 items-stretch w-full justify-between py-24"
         >
-
-            <h2 className="font-semibold text-4xl">Projects</h2>
+          <h2 className="font-semibold text-4xl">Projects</h2>
 
           <Card
             isFooterBlurred
             radius="sm"
             fullWidth
             isPressable
-            
             className="border-[0.5px] border-white/10 md:h-60 flex-col-reverse md:flex-col"
+            onClick={openAffirmProject}
           >
             <CardFooter className="flex flex-col gap-3 p-6 md:p-8 items-start justify-center z-10 md:w-1/2 w-full h-full bg-background/80 text-left md:absolute md:left-0 rounded-none border-t-[0.5px] md:border-t-0 md:border-r-[0.5px] border-white/10">
               <Chip
@@ -67,6 +76,7 @@ export default function Projects() {
             fullWidth
             isPressable
             className="border-[0.5px] border-white/10 md:h-60 flex-col-reverse md:flex-col"
+            onClick={openWarriorsForFreedom}
           >
             <CardFooter className="flex flex-col gap-3 p-6 md:p-8 items-start justify-center z-10 md:w-1/2 w-full h-full bg-background/80 text-left md:absolute md:left-0 rounded-none border-t-[0.5px] md:border-t-0 md:border-r-[0.5px] border-white/10">
               <Chip

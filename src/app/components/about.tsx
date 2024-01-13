@@ -236,8 +236,7 @@ export default function About() {
                   <Divider />
                   <CardBody className="p-4">
                     <p className="text-sm">
-                      Deliver high-fidelity user interface designs for new
-                      internal tooling.
+                    Designed user interface and researched user behavior for the Bible App.
                     </p>
                   </CardBody>
                 </Card>
