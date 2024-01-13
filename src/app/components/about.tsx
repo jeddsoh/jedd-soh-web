@@ -219,13 +219,13 @@ export default function About() {
                 }
               >
                 <Card
-                  className="flex flex-col"
+                  className="flex flex-col overflow-auto"
                   radius="sm"
                   isPressable
                   fullWidth
                 >
                   <CardHeader className="flex gap-3 p-4">
-                    <div className="flex flex-row justify-between w-full items-center overflow-auto gap-4">
+                    <div className="flex flex-row justify-between w-full items-center  gap-4">
                       <div className="flex flex-row gap-4 items-start text-left">
                         <p className="text-nowrap text-base md:text-xl">
                           University of Oklahoma
@@ -287,13 +287,13 @@ export default function About() {
                   </CardHeader>
                 </Card>
                 <Card
-                  className="flex flex-col mt-3"
+                  className="flex flex-col mt-3 overflow-auto"
                   radius="sm"
                   isPressable
                   fullWidth
                 >
                   <CardHeader className="flex gap-3 p-4">
-                    <div className="flex flex-row gap-4 justify-between w-full items-center overflow-auto">
+                    <div className="flex flex-row gap-4 justify-between w-full items-center">
                       <div className="flex flex-row gap-4 items-start text-left">
                         <p className="text-nowrap text-base md:text-xl">
                           Beijing Normal University
