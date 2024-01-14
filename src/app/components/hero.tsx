@@ -17,15 +17,9 @@ export default function Hero() {
     }
   };
 
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById("about");
-
-    if (aboutSection) {
-      aboutSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
+  const openResume = () => {
+    const resume = '/jedd-soh-resume.pdf';
+    window.open(resume, '_blank');
   };
 
   return (
@@ -71,7 +65,7 @@ export default function Hero() {
               variant="flat"
               size="lg"
               radius="sm"
-              onClick={scrollToAbout}
+              onClick={openResume}
             >
               View My Resume
             </Button>
