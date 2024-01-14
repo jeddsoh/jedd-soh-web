@@ -392,7 +392,7 @@ export default function About() {
                       </p>
                       <Divider />
                       <p>
-                        Currently, I&apos;m under contract with <Link isBlock isExternal href="https://wipro.com">Wipro</Link>, building design systems and strategizing design operations. But this will be my final battle as a designer, as I&apos;ve been told engineers get a little more respect &apos;round these parts. Recently, I&apos;ve re-enrolled in YouTube University and have been learning to code in my secret hideout (parents&apos; basement).
+                        Currently, I&apos;m under contract with <Link isBlock isExternal href="https://wipro.com">Wipro</Link>, building design systems and stuff. But this will be my final battle as a designer, as I&apos;ve been told engineers get a little more respect &apos;round these parts. Recently, I&apos;ve re-enrolled in YouTube University and have been learning to code in my secret hideout (parents&apos; basement).
                       </p>
                       </div>
                     </div>
