@@ -178,6 +178,7 @@ export default function About() {
                     <Link
                       isBlock
                       showAnchorIcon
+                      isExternal
                       href="https://frankyou.com"
                       color="primary"
                       size="sm"
@@ -187,6 +188,7 @@ export default function About() {
                     <Link
                       isBlock
                       showAnchorIcon
+                      isExternal
                       href="https://warriorsforfreedom.org"
                       color="primary"
                       size="sm"
@@ -196,6 +198,7 @@ export default function About() {
                     <Link
                       isBlock
                       showAnchorIcon
+                      isExternal
                       href="https://yourwsa.com"
                       color="primary"
                       size="sm"
@@ -377,15 +380,21 @@ export default function About() {
                   <CardBody className="flex flex-row p-8 items-center gap-8">
                     <div className="flex flex-col gap-4">
                       <h3 className="font-semibold text-2xl">
-                        My heading goes here.
+                        The history of my entire life
                       </h3>
+                      <div className="flex flex-col gap-6">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
+                        After graduating under lockdown with a major in video production, I realized I like being on my laptop more than being on a set, so I attended YouTube University and learned design. Then, I passed away.
                       </p>
+                      <Divider />
+                      <p>
+                        I respawned and began my tech journey by designing logos and branding. Then, God airdropped the new UX/UI update into my teeny weeny brain, so I interned for <Link isBlock isExternal href="https://youversion.church">the Bible</Link> before launching my freelance career.
+                      </p>
+                      <Divider />
+                      <p>
+                        Currently, I&apos;m under contract with <Link isBlock isExternal href="https://wipro.com">Wipro</Link>, building design systems and strategizing design operations. But this will be my final battle as a designer, as I&apos;ve been told engineers get a little more respect &apos;round these parts. Recently, I&apos;ve re-enrolled in YouTube University and have been learning to code in my secret hideout (parents&apos; basement).
+                      </p>
+                      </div>
                     </div>
                   </CardBody>
                 </Card>
