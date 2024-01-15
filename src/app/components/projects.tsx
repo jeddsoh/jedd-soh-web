@@ -9,6 +9,11 @@ import { faPenNib } from "@fortawesome/free-solid-svg-icons";
 import { faWebflow } from "@fortawesome/free-brands-svg-icons";
 
 export default function Projects() {
+  const openQuickSilver = () => {
+    const quickSilver = "https://www.figma.com/community/file/1328329151973841917/quicksilver-wireframing-kit";
+    window.open(quickSilver, "_blank");
+  };
+
   const openAffirmProject = () => {
     const affirmProject = "https://cyberpotions.com/projects/affirm";
     window.open(affirmProject, "_blank");
@@ -33,7 +38,7 @@ export default function Projects() {
             fullWidth
             isPressable
             className="border-[0.5px] border-white/10 md:h-60 flex-col-reverse md:flex-col"
-            onClick={openAffirmProject}
+            onClick={openQuickSilver}
           >
             <CardFooter className="flex flex-col gap-3 p-6 md:p-8 items-start justify-center z-10 md:w-1/2 w-full h-full bg-background/80 text-left md:absolute md:left-0 rounded-none border-t-[0.5px] md:border-t-0 md:border-r-[0.5px] border-white/10">
               <Chip
