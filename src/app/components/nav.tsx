@@ -3,11 +3,9 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
+  User,
+  Link,
 } from "@nextui-org/react";
-import { User, Link, Button } from "@nextui-org/react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -21,18 +19,23 @@ export default function Nav() {
   return (
     <Navbar maxWidth="lg" className="px-4 navbar">
       <NavbarBrand>
+        <Link href="">
         <User
           name={
             <p className="font-semibold text-yellow-500 uppercase tracking-wide">
               Jedd Soh
             </p>
           }
-          description="Software Design-gineer"
+          description={
+            <p className="text-foreground">Software Design-gineer</p>
+          }
           avatarProps={{
-            src: "/images/memoji.png",
+            src: "/icon.svg",
             name: "JS",
           }}
+          
         />
+        </Link>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
