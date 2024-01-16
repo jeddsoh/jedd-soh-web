@@ -14,6 +14,10 @@ import {
   Image,
   Chip,
   Divider,
+  Tooltip,
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
 } from "@nextui-org/react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -75,7 +79,7 @@ export default function About() {
                 }
               >
                 <Card
-                  className="flex flex-col text-left overflow-auto"
+                  className="flex flex-col text-left"
                   radius="sm"
                   isPressable
                   onClick={openWipro}
@@ -108,7 +112,7 @@ export default function About() {
                   </CardBody>
                 </Card>
                 <Card
-                  className="flex flex-col mt-3 text-left overflow-auto"
+                  className="flex flex-col mt-3 text-left"
                   radius="sm"
                   isPressable
                   onClick={openAffirm}
@@ -208,7 +212,7 @@ export default function About() {
                   </div>
                 </Card>
                 <Card
-                  className="flex flex-col mt-3 text-left overflow-auto"
+                  className="flex flex-col mt-3 text-left"
                   radius="sm"
                   isPressable
                   onClick={openYouVersion}
@@ -255,71 +259,117 @@ export default function About() {
                 }
               >
                 <Card
-                  className="flex flex-col overflow-auto"
+                  className="flex flex-col"
                   radius="sm"
                   isPressable
                   onClick={openUniversityOfOklahoma}
                   fullWidth
                 >
                   <CardHeader className="flex gap-3 p-4">
-                    <div className="flex flex-row justify-between w-full items-center  gap-4">
+                    <div className="flex flex-row justify-between w-full items-center gap-4">
                       <div className="flex flex-row gap-4 items-start text-left">
                         <p className="whitespace-nowrap text-base md:text-xl">
                           University of Oklahoma
                         </p>
                       </div>
-                      <div className="flex flex-row gap-4 items-center">
-                        <Chip
-                          className="gap-1 font-semibold"
-                          variant="solid"
-                          classNames={{
-                            base: "",
-                            content: "",
-                          }}
-                          startContent={
-                            <FontAwesomeIcon
-                              icon={faGraduationCap}
-                              className="ml-2"
-                            />
-                          }
-                        >
-                          Class of 2020
-                        </Chip>
+                      <div className="flex flex-row gap-3 md:gap-4 items-center overflow-auto">
+                      <Popover placement="top" color="primary" radius="sm">
+                          <PopoverTrigger>
+                          <Chip
+                            className="gap-1 font-semibold"
+                            variant="solid"
+                            classNames={{
+                              base: "",
+                              content: "hidden md:block",
+                            }}
+                            startContent={
+                              <FontAwesomeIcon
+                                icon={faGraduationCap}
+                                className="mx-1 md:mx-0 md:ml-2"
+                              />
+                            }
+                          >
+                            Class of 2020
+                          </Chip>
+                          </PopoverTrigger>
+                          <PopoverContent>
+                            <div className="px-1 py-2 text-yellow-950">
+                            
+                              <div className="text-small font-semibold">
+                                Class of 2020
+                              </div>
+                             
+                            </div>
+                          </PopoverContent>
+                        </Popover>
+                        <Popover placement="top" color="primary" radius="sm">
+                          <PopoverTrigger>
+                            <Chip
+                              className="gap-1 font-semibold"
+                              variant="flat"
+                              classNames={{
+                                base: "",
+                                content: "hidden md:block",
+                              }}
+                              startContent={
+                                <FontAwesomeIcon
+                                  icon={faScroll}
+                                  className="mx-1 md:mx-0 md:ml-2"
+                                />
+                              }
+                            >
+                              B.A. Creative Media Production
+                            </Chip>
+                          </PopoverTrigger>
+                          <PopoverContent>
+                            <div className="px-1 py-2 text-yellow-950">
+                            <div className="text-tiny ">
+                                Bachelor of Arts
+                              </div>
+                              <div className="text-small font-semibold">
+                                Creative Media Production
+                              </div>
+                             
+                            </div>
+                          </PopoverContent>
+                        </Popover>
+                        <Popover placement="top" color="primary" radius="sm">
+                          <PopoverTrigger>
                         <Chip
                           className="gap-1 font-semibold"
                           variant="flat"
                           classNames={{
                             base: "",
-                            content: "",
-                          }}
-                          startContent={
-                            <FontAwesomeIcon icon={faScroll} className="ml-2" />
-                          }
-                        >
-                          B.A. Creative Media Production
-                        </Chip>
-                        <Chip
-                          className="gap-1 font-semibold"
-                          variant="flat"
-                          classNames={{
-                            base: "",
-                            content: "",
+                            content: "hidden md:block",
                           }}
                           startContent={
                             <FontAwesomeIcon
                               icon={faScroll}
-                              className="ml-2 "
+                              className="mx-1 md:mx-0 md:ml-2"
                             />
                           }
                         >
                           B.A. Chinese
                         </Chip>
+                        </PopoverTrigger>
+                          <PopoverContent>
+                            <div className="px-1 py-2 text-yellow-950">
+                            <div className="text-tiny ">
+                                Bachelor of Arts
+                              </div>
+                              <div className="text-small font-semibold">
+                                Chinese
+                              </div>
+                             
+                            </div>
+                          </PopoverContent>
+                        </Popover>
                       </div>
                     </div>
                   </CardHeader>
                 </Card>
                 <Card
-                  className="flex flex-col mt-3 overflow-auto"
+                  className="flex flex-col mt-3"
                   radius="sm"
                   isPressable
                   onClick={openBeijingNormalUniversity}
@@ -332,36 +382,69 @@ export default function About() {
                           Beijing Normal University
                         </p>
                       </div>
-                      <div className="flex flex-row gap-4 items-center">
+                      <div className="flex flex-row gap-3 md:gap-4 items-center">
+                      <Popover placement="top" color="primary" radius="sm">
+                          <PopoverTrigger>
                         <Chip
                           className="gap-1 font-semibold"
                           variant="solid"
                           classNames={{
                             base: "",
-                            content: "",
+                            content: "hidden md:block",
                           }}
                           startContent={
                             <FontAwesomeIcon
                               icon={faGraduationCap}
-                              className="ml-2"
+                              className="mx-1 md:mx-0 md:ml-2"
                             />
                           }
                         >
                           2017 - 2018
                         </Chip>
+                        </PopoverTrigger>
+                          <PopoverContent>
+                            <div className="px-1 py-2 text-yellow-950">
+                            <div className="text-tiny ">
+                                Exchange Program
+                              </div>
+                              <div className="text-small font-semibold">
+                                Academic Year 2017-2018
+                              </div>
+                             
+                            </div>
+                          </PopoverContent>
+                        </Popover>
+                        <Popover placement="top" color="primary" radius="sm">
+                          <PopoverTrigger>
                         <Chip
                           className="gap-1 font-semibold"
                           variant="flat"
                           classNames={{
                             base: "",
-                            content: "",
+                            content: "hidden md:block",
                           }}
                           startContent={
-                            <FontAwesomeIcon icon={faScroll} className="ml-2" />
+                            <FontAwesomeIcon
+                              icon={faScroll}
+                              className="mx-1 md:mx-0 md:ml-2"
+                            />
                           }
                         >
                           Exchange Program
                         </Chip>
+                        </PopoverTrigger>
+                          <PopoverContent>
+                            <div className="px-1 py-2 text-yellow-950">
+                            <div className="text-tiny ">
+                                Certification
+                              </div>
+                              <div className="text-small font-semibold">
+                                HSK Level 5
+                              </div>
+                             
+                            </div>
+                          </PopoverContent>
+                        </Popover>
                       </div>
                     </div>
                   </CardHeader>
@@ -383,17 +466,39 @@ export default function About() {
                         The history of my entire life
                       </h3>
                       <div className="flex flex-col gap-6">
-                      <p>
-                        After graduating under lockdown with a major in video production, I realized I like being on my laptop more than being on a set, so I attended YouTube University and learned design. Then, I passed away.
-                      </p>
-                      <Divider />
-                      <p>
-                        I respawned and began my tech journey by designing logos and branding. Then, God airdropped the new UX/UI update into my teeny weeny brain, so I interned for <Link isBlock isExternal href="https://youversion.church">the Bible</Link> before launching my freelance career.
-                      </p>
-                      <Divider />
-                      <p>
-                        Currently, I&apos;m under contract with <Link isBlock isExternal href="https://wipro.com">Wipro</Link>, building design systems and stuff. But this will be my final battle as a designer, as I&apos;ve been told engineers get a little more respect &apos;round these parts. Recently, I&apos;ve re-enrolled in YouTube University and have been learning to code in my secret hideout (parents&apos; basement).
-                      </p>
+                        <p>
+                          After graduating under lockdown with a major in video
+                          production, I realized I like being on my laptop more
+                          than being on a set, so I attended YouTube University
+                          and learned design. Then, I passed away.
+                        </p>
+                        <Divider />
+                        <p>
+                          I respawned and began my tech journey by designing
+                          logos and branding. Then, God airdropped the new UX/UI
+                          update into my teeny weeny brain, so I interned for{" "}
+                          <Link
+                            isBlock
+                            isExternal
+                            href="https://youversion.church"
+                          >
+                            the Bible
+                          </Link>{" "}
+                          before launching my freelance career.
+                        </p>
+                        <Divider />
+                        <p>
+                          Currently, I&apos;m under contract with{" "}
+                          <Link isBlock isExternal href="https://wipro.com">
+                            Wipro
+                          </Link>
+                          , building design systems and stuff. But this will be
+                          my final battle as a designer, as I&apos;ve been told
+                          engineers get a little more respect &apos;round these
+                          parts. Recently, I&apos;ve re-enrolled in YouTube
+                          University and have been learning to code in my secret
+                          hideout (parents&apos; basement).
+                        </p>
                       </div>
                     </div>
                   </CardBody>
