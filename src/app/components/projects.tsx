@@ -29,7 +29,7 @@ export default function Projects() {
       <Container>
         <div
           id="home-projects-layout"
-          className="flex flex-col gap-4 items-stretch w-full justify-between py-24"
+          className="flex flex-col gap-4 items-stretch w-full justify-between py-10 md:py-16"
         >
           <h2 className="font-semibold text-4xl">Projects</h2>
           <Card

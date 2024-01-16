@@ -27,7 +27,7 @@ export default function Hero() {
       <Container>
         <div
           id="home-hero-layout"
-          className="flex flex-col py-20 gap-10 items-center"
+          className="flex flex-col py-10 md:py-16 gap-10 items-center"
         >
           <div
             id="home-hero-text"

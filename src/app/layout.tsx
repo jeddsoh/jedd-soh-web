@@ -30,8 +30,8 @@ export default function RootLayout({
         <link
           rel="icon"
           href="/icon.png"
-          type="image/<generated>"
-          sizes="<generated>"
+          type="image/png"
+          sizes="32x32"
         />
       </head>
       <body

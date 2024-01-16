@@ -65,7 +65,7 @@ export default function About() {
   return (
     <Section id="about">
       <Container>
-        <div id="home-about-layout" className="flex flex-col py-24 gap-10">
+        <div id="home-about-layout" className="flex flex-col py-10 md:py-16 gap-10">
           <h2 className="font-semibold text-4xl">About</h2>
           <div className="flex w-full flex-col">
             <Tabs aria-label="Options" fullWidth radius="sm" size="lg">
