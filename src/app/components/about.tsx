@@ -474,7 +474,7 @@ export default function About() {
                         </p>
                         <Divider />
                         <p>
-                          I respawned and began my tech journey by designing
+                          I respawned and began my design journey by designing
                           logos and branding. Then, God airdropped the new UX/UI
                           update into my teeny weeny brain, so I interned for{" "}
                           <Link
