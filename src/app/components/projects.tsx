@@ -29,7 +29,7 @@ export default function Projects() {
       <Container>
         <div
           id="home-projects-layout"
-          className="flex flex-col gap-10 items-stretch w-full justify-between py-24"
+          className="flex flex-col gap-4 items-stretch w-full justify-between py-24"
         >
           <h2 className="font-semibold text-4xl">Projects</h2>
           <Card
@@ -37,10 +37,10 @@ export default function Projects() {
             radius="sm"
             fullWidth
             isPressable
-            className="border-[0.5px] border-white/10 md:h-60 flex-col-reverse md:flex-col"
+            className="border-[0.5px] border-white/10 md:h-60 flex-col-reverse md:flex-col mt-6"
             onClick={openQuickSilver}
           >
-            <CardFooter className="flex flex-col gap-3 p-6 md:p-8 items-start justify-center z-10 md:w-1/2 w-full h-full bg-background/80 text-left md:absolute md:left-0 rounded-none border-t-[0.5px] md:border-t-0 md:border-r-[0.5px] border-white/10">
+            <CardFooter className="flex flex-col gap-3 p-6 md:p-8 items-start justify-center z-10 md:w-1/2 w-full h-full bg-background/80 text-left md:absolute md:left-0 rounded-none md:border-t-0 md:border-r-[0.5px] border-white/10">
               <Chip
                 size="sm"
                 className="gap-1 uppercase font-semibold tracking-wide"
@@ -66,10 +66,11 @@ export default function Projects() {
             </CardFooter>
             <Image
               alt="quickSilver project cover"
-              className="object-cover h-60 z-0"
+              className="hidden md:block object-cover h-60 z-0"
               src="/images/quickSilver.png"
               isZoomed
               radius="none"
+              
             />
           </Card>
           <Card
@@ -80,7 +81,7 @@ export default function Projects() {
             className="border-[0.5px] border-white/10 md:h-60 flex-col-reverse md:flex-col"
             onClick={openAffirmProject}
           >
-            <CardFooter className="flex flex-col gap-3 p-6 md:p-8 items-start justify-center z-10 md:w-1/2 w-full h-full bg-background/80 text-left md:absolute md:left-0 rounded-none border-t-[0.5px] md:border-t-0 md:border-r-[0.5px] border-white/10">
+            <CardFooter className="flex flex-col gap-3 p-6 md:p-8 items-start justify-center z-10 md:w-1/2 w-full h-full bg-background/80 text-left md:absolute md:left-0 rounded-none md:border-t-0 md:border-r-[0.5px] border-white/10">
               <Chip
                 size="sm"
                 className="gap-1 uppercase font-semibold tracking-wide"
@@ -108,7 +109,7 @@ export default function Projects() {
             </CardFooter>
             <Image
               alt="YouVersion project cover"
-              className="object-cover h-60 z-0"
+              className="object-cover h-60 z-0 hidden md:block"
               src="/images/affirm.png"
               isZoomed
               radius="none"
@@ -122,7 +123,7 @@ export default function Projects() {
             className="border-[0.5px] border-white/10 md:h-60 flex-col-reverse md:flex-col"
             onClick={openWarriorsForFreedom}
           >
-            <CardFooter className="flex flex-col gap-3 p-6 md:p-8 items-start justify-center z-10 md:w-1/2 w-full h-full bg-background/80 text-left md:absolute md:left-0 rounded-none border-t-[0.5px] md:border-t-0 md:border-r-[0.5px] border-white/10">
+            <CardFooter className="flex flex-col gap-3 p-6 md:p-8 items-start justify-center z-10 md:w-1/2 w-full h-full bg-background/80 text-left md:absolute md:left-0 rounded-none md:border-t-0 md:border-r-[0.5px] border-white/10">
               <Chip
                 size="sm"
                 className="gap-1 uppercase font-semibold tracking-wide"
@@ -150,7 +151,7 @@ export default function Projects() {
             </CardFooter>
             <Image
               alt="YouVersion project cover"
-              className="object-cover h-60 z-0"
+              className="object-cover h-60 z-0 hidden md:block"
               src="/images/warriors-for-freedom.png"
               isZoomed
               radius="none"
