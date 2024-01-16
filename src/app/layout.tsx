@@ -26,6 +26,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link
+          rel="icon"
+          href="/icon.png"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+      </head>
       <body
         className={`${figtree.className} dark text-foreground bg-background`}
       >
