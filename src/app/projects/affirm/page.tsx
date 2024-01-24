@@ -12,7 +12,7 @@ export default function Home() {
           <Tooltip showArrow={true} content="Currently loading not shit" delay={0} closeDelay={0}>
           <Spinner size="lg" color="primary"/>
           </Tooltip>
-          <Code color="primary">The only thing actually loading is me. I&apos;m still building this page 😭</Code>
+          <Code color="primary" className="text-center">The only thing actually loading is me.<br/>I&apos;m still building this page 😭</Code>
           </div>
         </Container>
       </Section>
