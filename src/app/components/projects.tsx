@@ -15,8 +15,7 @@ export default function Projects() {
   };
 
   const openAffirmProject = () => {
-    const affirmProject = "https://cyberpotions.com/projects/affirm";
-    window.open(affirmProject, "_blank");
+    window.location.href = "/projects/affirm";
   };
 
   const openWarriorsForFreedom = () => {
