@@ -8,7 +8,23 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {},
+  theme: {
+    extend: {
+      animation: {
+        "meteor-effect": "meteor 5s linear infinite",
+      },
+      keyframes: {
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(215deg) translateX(-1000px)",
+            opacity: "0",
+          },
+        },
+      },
+    },
+  },
   darkMode: "class",
   plugins: [
     nextui({
@@ -54,7 +70,7 @@ const config: Config = {
               700: "#FCADF9",
               800: "#FDD5F9",
               900: "#FEECFE",
-              DEFAULT: "#eab308",
+              DEFAULT: "#06b6d4",
               foreground: "#ffffff",
             },
             focus: "#ca8a04",

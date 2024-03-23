@@ -1,100 +1,68 @@
-'use client'
+"use client";
 
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  User,
-  Link,
-} from "@nextui-org/react";
+import { User } from "@nextui-org/user";
+import { Link } from "@nextui-org/link";
+import { FaGithub, FaEnvelope } from "react-icons/fa";
+import { Button } from "@nextui-org/button";
 
-// Render different Navbar if not on home page
+interface IContactLink {
+  platform: string;
+  url: string;
+  icon: any;
+}
 
-
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHouse,
-  faCode,
-  faUser,
-  faComment,
-} from "@fortawesome/free-solid-svg-icons";
-
-
+const contactLinkIconSize = 16;
 
 export default function Nav() {
+  const contactLinks: IContactLink[] = [
+    {
+      platform: "email",
+      url: "/",
+      icon: <FaEnvelope size={contactLinkIconSize} />,
+    },
+    {
+      platform: "github",
+      url: "https://github.com/jeddsoh",
+      icon: <FaGithub size={contactLinkIconSize} />,
+    },
+  ];
 
   return (
-    <Navbar maxWidth="lg" className="px-4 navbar">
-      <NavbarBrand>
-        <Link href="/">
+    <header>
+      <nav className="max-w-2xl mx-auto py-12 flex items-center justify-between">
+        <Link href="/" color="primary">
           <User
-            name={
-              <p className="font-semibold text-yellow-500 uppercase tracking-wide">
-                Jedd Soh
-              </p>
-            }
-            description={
-              <p className="text-foreground">Software Design-gineer</p>
-            }
+            name="Jedd Soh"
+            description="Software Design Engineer"
             avatarProps={{
               src: "/icon.svg",
               name: "JS",
+              size: "sm",
+              className: "hidden",
+            }}
+            classNames={{
+              name: "text-lg font-semibold text-foreground",
+              description: "text-base text-primary",
             }}
           />
         </Link>
-      </NavbarBrand>
-        <NavbarContent className="hidden sm:flex gap-4" justify="center">
-          <NavbarItem>
-            <Link
-              href="/#hero"
+        <div className="flex gap-1">
+          {contactLinks.map((link) => (
+            <Button
+              as={Link}
+              key={link.platform}
+              href={link.url}
+              isExternal
+              isIconOnly
               size="sm"
-              isBlock
-              color="foreground"
-              showAnchorIcon
-              anchorIcon={<FontAwesomeIcon icon={faHouse} className="ml-2" />}
+              variant="light"
+              radius="sm"
             >
-              Home
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link
-              href="/#projects"
-              size="sm"
-              isBlock
-              color="foreground"
-              showAnchorIcon
-              anchorIcon={<FontAwesomeIcon icon={faCode} className="ml-2" />}
-            >
-              Projects
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link
-              href="/#about"
-              size="sm"
-              isBlock
-              color="foreground"
-              showAnchorIcon
-              anchorIcon={<FontAwesomeIcon icon={faUser} className="ml-2" />}
-            >
-              About
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link
-              href="/#contact"
-              size="sm"
-              isBlock
-              color="foreground"
-              showAnchorIcon
-              anchorIcon={<FontAwesomeIcon icon={faComment} className="ml-2" />}
-            >
-              Contact
-            </Link>
-          </NavbarItem>
-        </NavbarContent>
-    </Navbar>
+              {link.icon}
+            </Button>
+          ))}
+        </div>
+      </nav>
+    </header>
   );
 }

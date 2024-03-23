@@ -27,19 +27,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link
-          rel="icon"
-          href="/icon.svg"
-          type="image/svg"
-          sizes="32x32"
-        />
+        <link rel="icon" href="/icon.svg" type="image/svg" sizes="32x32" />
       </head>
       <body
-        className={`${figtree.className} dark text-foreground bg-background`}
+        className={`${figtree.className} dark text-foreground bg-background min-h-screen px-4 md:px-0`}
       >
         <Providers>
           <Nav />
-          {children}
+          <main className="z-10">{children}</main>
         </Providers>
       </body>
     </html>
