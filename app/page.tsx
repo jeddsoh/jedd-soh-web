@@ -50,7 +50,6 @@ export default function Home() {
                 {project.status ? (
                   <Chip
                     size="sm"
-                    color={`${project.status.color}`}
                     classNames={{ base: "py-1 h-auto" }}
                   >
                     {project.status.text}
