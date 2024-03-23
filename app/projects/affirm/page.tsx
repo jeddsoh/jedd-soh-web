@@ -1,5 +1,5 @@
-import { Section } from "@/app/components/section";
-import { Container } from "@/app/components/container";
+import { Section } from "../../components/section";
+import { Container } from "../../components/container";
 import {Spinner, Code, Tooltip} from "@nextui-org/react";
 
 
