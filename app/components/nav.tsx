@@ -33,7 +33,7 @@ export default function Nav() {
         <Link href="/" color="primary">
           <User
             name="Jedd Soh"
-            description="Software Design Engineer"
+            description="Software Developer"
             avatarProps={{
               src: "/icon.svg",
               name: "JS",
