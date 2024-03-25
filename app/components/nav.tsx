@@ -17,7 +17,7 @@ export default function Nav() {
   const contactLinks: IContactLink[] = [
     {
       platform: "email",
-      url: "/",
+      url: "mailto:jeddsoh@gmail.com",
       icon: <FaEnvelope size={contactLinkIconSize} />,
     },
     {

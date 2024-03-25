@@ -17,14 +17,14 @@ interface IProjectProps {
 export default function Home() {
   const projects: IProjectProps[] = [
     {
-      name: "cyberspace",
-      description: "A task management web app. Built using Next.js.",
-      href: "https://github.com/jeddsoh/cyberspace",
-    },
-    {
       name: "jedd-soh-web",
       description: "My software development portfolio. Built using Next.js.",
       href: "https://github.com/jeddsoh/jedd-soh-web",
+    },
+    {
+      name: "cyberspace",
+      description: "A task management web app. Built using Next.js.",
+      href: "https://github.com/jeddsoh/cyberspace",
     },
     {
       name: "cyberpotions-web",
@@ -34,7 +34,7 @@ export default function Home() {
     {
       name: "gamma-beta-web",
       description: "A marketing site and web app for a fraternity.",
-      href: "https://github.com/jeddsoh/jedd-soh-web",
+      href: "https://github.com/jeddsoh/gamma-beta-web",
     },
   ];
 
