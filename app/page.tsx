@@ -3,6 +3,7 @@
 import { Link } from "@nextui-org/link";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import { Chip } from "@nextui-org/chip";
+import { Meteors } from "./components/ui/meteors";
 
 interface IProjectProps {
   name: string;
@@ -28,7 +29,8 @@ export default function Home() {
     },
     {
       name: "cyberpotions-web",
-      description: "A website for my software and design business, cyberPotions. Built with Next.js and Supabase.",
+      description:
+        "A website for my software and design business, cyberPotions. Built with Next.js and Supabase.",
       href: "https://github.com/jeddsoh/cyberpotions-web",
     },
     {
@@ -41,6 +43,8 @@ export default function Home() {
   return (
     <section>
       <div className="max-w-2xl mx-auto flex flex-col gap-4 items-stretch overflow-hidden">
+      <Meteors className="md:hidden"/>
+
         <h1 className="text-lg font-semibold">Projects</h1>
         {projects.map((project) => (
           <Link isExternal href={project.href} key={project.href}>
@@ -48,10 +52,7 @@ export default function Home() {
               <CardHeader className="p-0 flex items-center gap-2">
                 <p className="text-base">{project.name}</p>
                 {project.status ? (
-                  <Chip
-                    size="sm"
-                    classNames={{ base: "py-1 h-auto" }}
-                  >
+                  <Chip size="sm" classNames={{ base: "py-1 h-auto" }}>
                     {project.status.text}
                   </Chip>
                 ) : null}
